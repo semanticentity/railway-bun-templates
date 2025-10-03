@@ -17,6 +17,13 @@ Perfect for single-page applications, dashboards, admin panels, and modern web a
 - **Responsive design** - Mobile-first approach
 - **Production optimized** - Built-in optimizations and health checks
 
+## Technology Stack
+
+- **Runtime:** Bun
+- **Language:** TypeScript
+- **Frontend:** React 18 + Vite
+- **Server:** Native Bun APIs
+
 ## Quick Start
 
 ```bash
@@ -84,8 +91,8 @@ bun-react-vite/
 ├── src/
 │   ├── App.tsx          # Main app component
 │   ├── main.tsx         # Entry point
-│   └── index.css        # Global styles
-├── server.ts            # Production server with health checks
+│   ├── index.css        # Global styles
+│   └── server.ts        # Production server with health checks
 ├── package.json         # Dependencies and scripts
 ├── railway.json         # Railway configuration
 └── vite.config.ts       # Vite configuration

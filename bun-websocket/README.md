@@ -17,6 +17,12 @@ Perfect for chat applications, live dashboards, collaborative tools, and any rea
 - **Heartbeat/ping-pong** - Connection health monitoring
 - **Test client included** - Built-in web client for testing
 
+## Technology Stack
+
+- **Runtime:** Bun
+- **Language:** TypeScript
+- **Framework:** Native Bun APIs
+
 ## Quick Start
 
 ```bash
