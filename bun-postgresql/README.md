@@ -32,6 +32,14 @@ Perfect for user management systems, CMS backends, SaaS platforms, and any data-
 - **TypeScript** - End-to-end type safety
 - **ES modules** - Modern JavaScript
 
+## Technology Stack
+
+- **Runtime:** Bun
+- **Language:** TypeScript
+- **Framework:** Native Bun APIs
+- **Database:** PostgreSQL
+- **Driver:** postgres
+
 ## API Endpoints
 
 | Endpoint | Method | Description |
