@@ -1,6 +1,7 @@
 {
   "name": "bun-rest-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "Comprehensive REST API server built with Bun and TypeScript, optimized for Railway deployment",
   "main": "src/index.ts",
   "scripts": {

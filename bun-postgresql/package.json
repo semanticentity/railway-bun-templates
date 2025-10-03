@@ -1,6 +1,7 @@
 {
   "name": "bun-postgresql",
   "version": "1.0.0",
+  "type": "module",
   "description": "Bun + PostgreSQL API template for Railway deployment",
   "main": "src/index.ts",
   "scripts": {
