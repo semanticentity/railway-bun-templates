@@ -1,16 +1,18 @@
-# Bun + PostgreSQL 🗄️⚡
+# Bun + PostgreSQL
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+[![Tests](https://github.com/semanticentity/railway-bun-templates/workflows/Tests/badge.svg)](https://github.com/semanticentity/railway-bun-templates/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Full-stack API with PostgreSQL, ready in 60 seconds.** Lightning-fast Bun server with production-grade PostgreSQL database, delivering **3-6x better performance** than Node.js with zero configuration.
 
 Perfect for user management systems, CMS backends, SaaS platforms, and any data-driven application.
 
-## 🚀 One-Click Deploy
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+## One-Click Deploy
 
 **Includes:** Bun API + PostgreSQL database + automatic migrations + connection pooling
 
-## ⚡ Why This Stack?
+## Why This Stack?
 
 - **3-6x faster** than Node.js + PostgreSQL
 - **Zero config** - Database automatically connected
@@ -19,18 +21,18 @@ Perfect for user management systems, CMS backends, SaaS platforms, and any data-
 - **Native TypeScript** - Full type safety
 - **Railway optimized** - Health checks built-in
 
-## ✨ Features
+## Features
 
-- 🗄️ **PostgreSQL included** - Automatic provisioning on Railway
-- 🔄 **Database migrations** - Version-controlled schema changes
-- 🏊 **Connection pooling** - Efficient database connections
-- ✅ **Full CRUD API** - Complete user management example
-- 🛡️ **Error handling** - Robust database error management
-- 🏥 **Health checks** - Database connectivity monitoring
-- 📝 **TypeScript** - End-to-end type safety
-- 🚀 **ES modules** - Modern JavaScript
+- **PostgreSQL included** - Automatic provisioning on Railway
+- **Database migrations** - Version-controlled schema changes
+- **Connection pooling** - Efficient database connections
+- **Full CRUD API** - Complete user management example
+- **Error handling** - Robust database error management
+- **Health checks** - Database connectivity monitoring
+- **TypeScript** - End-to-end type safety
+- **ES modules** - Modern JavaScript
 
-## 📋 API Endpoints
+## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -43,7 +45,7 @@ Perfect for user management systems, CMS backends, SaaS platforms, and any data-
 | `/posts` | GET | List all posts with author info |
 | `/posts` | POST | Create new post |
 
-## 🗄️ Database Schema
+## Database Schema
 
 ```sql
 -- Users table
@@ -66,7 +68,7 @@ CREATE TABLE posts (
 
 Migrations run automatically on deployment!
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -82,7 +84,7 @@ bun run db:migrate
 bun run db:seed
 ```
 
-## 🔧 Environment Variables
+## Environment Variables
 
 | Variable | Description | Auto-Set by Railway |
 |----------|-------------|---------------------|
@@ -95,7 +97,7 @@ bun run db:seed
 - Runs migrations on deploy
 - Configures connection pooling
 
-## 🎯 Perfect For
+## Perfect For
 
 - **User Management** - Authentication and user data
 - **CMS Backends** - Content management systems
@@ -104,7 +106,7 @@ bun run db:seed
 - **E-commerce** - Product catalogs and orders
 - **Analytics Dashboards** - Data storage and retrieval
 
-## 🛠️ Local Development
+## Local Development
 
 ```bash
 # 1. Install Bun
@@ -129,7 +131,7 @@ bun run dev
 # Try http://localhost:3000/health
 ```
 
-## 📊 Database Operations
+## Database Operations
 
 ```typescript
 // Example: Query users
@@ -149,7 +151,7 @@ await sql`
 `;
 ```
 
-## 🚀 Deploy to Railway
+## Deploy to Railway
 
 ### Option 1: One-Click (Recommended)
 Click the deploy button above. Railway automatically:
@@ -191,7 +193,7 @@ railway run bun run db:migrate
 railway connect postgres
 ```
 
-## 📖 Extending This Template
+## Extending This Template
 
 ```typescript
 // Add new table migration
@@ -218,18 +220,18 @@ if (url.pathname === '/comments') {
 }
 ```
 
-## 🤝 Support & Community
+## Support & Community
 
-- 📚 [Railway Documentation](https://docs.railway.com)
-- 🐘 [PostgreSQL Docs](https://www.postgresql.org/docs/)
-- 💬 [Railway Discord](https://discord.gg/railway)
-- 🐛 [Report Issues](https://github.com/YOUR-USERNAME/railway-bun-templates/issues)
-- ⭐ Star this repo if you find it useful!
+- [Railway Documentation](https://docs.railway.com)
+- [PostgreSQL Docs](https://www.postgresql.org/docs/)
+- [Railway Discord](https://discord.gg/railway)
+- [Report Issues](https://github.com/semanticentity/railway-bun-templates/issues)
+- Star this repo if you find it useful
 
-## 📄 License
+## License
 
 MIT - use freely in personal and commercial projects.
 
 ---
 
-**Built with ⚡ by [Your Name]** | First Bun templates on Railway marketplace
+**Built by semanticentity** | First Bun templates on Railway marketplace

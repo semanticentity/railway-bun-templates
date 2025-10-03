@@ -1,16 +1,18 @@
-# Bun HTTP Server ⚡
+# Bun HTTP Server
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+[![Tests](https://github.com/semanticentity/railway-bun-templates/workflows/Tests/badge.svg)](https://github.com/semanticentity/railway-bun-templates/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **The fastest way to build HTTP APIs on Railway.** Lightning-fast HTTP server built with Bun, delivering **3-6x better performance** than Node.js with zero configuration required.
 
 Perfect for REST APIs, webhooks, microservices, and any backend that needs blazing speed.
 
-## 🚀 One-Click Deploy
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+## One-Click Deploy
 
 Deploys in under 60 seconds with automatic HTTPS, health checks, and zero config.
 
-## ⚡ Why Bun?
+## Why Bun?
 
 - **3-6x faster** than Node.js
 - **3x faster** than Flask/Django
@@ -19,14 +21,14 @@ Deploys in under 60 seconds with automatic HTTPS, health checks, and zero config
 - **20x faster** npm install
 - **Production-ready** performance out of the box
 
-## ✨ Features
+## Features
 
-- ✅ **Health check endpoint** - Railway-optimized monitoring
-- 🔥 **Hot reload** - instant updates during development
-- 🛡️ **Error handling** - robust error responses
-- 📝 **TypeScript** - full type safety
-- 🚀 **ES modules** - modern JavaScript
-- 🎯 **Zero dependencies** - minimal attack surface
+- **Health check endpoint** - Railway-optimized monitoring
+- **Hot reload** - instant updates during development
+- **Error handling** - robust error responses
+- **TypeScript** - full type safety
+- **ES modules** - modern JavaScript
+- **Zero dependencies** - minimal attack surface
 
 ## Quick Start
 
@@ -41,7 +43,7 @@ bun run dev
 bun run start
 ```
 
-## 📋 API Endpoints
+## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -49,7 +51,7 @@ bun run start
 | `/health` | GET | Health check for Railway monitoring |
 | `/hello/:name` | GET | Example parameterized route |
 
-## 🎯 Perfect For
+## Perfect For
 
 - **REST APIs** - Build blazing-fast API backends
 - **Webhooks** - Handle webhook events at scale
@@ -58,7 +60,7 @@ bun run start
 - **API Gateways** - High-performance routing
 - **SaaS Backends** - Production-ready infrastructure
 
-## 🔧 Environment Variables
+## Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
@@ -66,7 +68,7 @@ bun run start
 
 No other configuration needed! Railway handles everything automatically.
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 ```
 Requests/second (higher is better):
@@ -77,7 +79,7 @@ Flask:     12,000 req/s  ██████
 
 **Real-world performance:** 3-6x faster than Node.js, 3x faster than Python frameworks.
 
-## 🛠️ Local Development
+## Local Development
 
 ```bash
 # Clone or create new project
@@ -96,7 +98,7 @@ bun run dev
 # Try http://localhost:3000/health
 ```
 
-## 🚀 Deploy to Railway
+## Deploy to Railway
 
 ### Option 1: One-Click (Recommended)
 Click the deploy button above and Railway handles everything!
@@ -116,7 +118,7 @@ railway init
 railway up
 ```
 
-## 📖 Extending This Template
+## Extending This Template
 
 ```typescript
 // src/index.ts
@@ -135,17 +137,17 @@ const server = Bun.serve({
 });
 ```
 
-## 🤝 Support & Community
+## Support & Community
 
-- 📚 [Railway Documentation](https://docs.railway.com)
-- 💬 [Railway Discord](https://discord.gg/railway)
-- 🐛 [Report Issues](https://github.com/YOUR-USERNAME/railway-bun-templates/issues)
-- ⭐ Star this repo if you find it useful!
+- [Railway Documentation](https://docs.railway.com)
+- [Railway Discord](https://discord.gg/railway)
+- [Report Issues](https://github.com/semanticentity/railway-bun-templates/issues)
+- Star this repo if you find it useful
 
-## 📄 License
+## License
 
 MIT - use freely in personal and commercial projects.
 
 ---
 
-**Built with ⚡ by [Your Name]** | First Bun templates on Railway marketplace
+**Built by semanticentity** | First Bun templates on Railway marketplace
