@@ -18,6 +18,12 @@ Perfect for backend APIs, SaaS platforms, mobile app backends, and any applicati
 - **Security headers** - Production security best practices
 - **3-6x faster** than Node.js - Native Bun performance
 
+## Technology Stack
+
+- **Runtime:** Bun
+- **Language:** TypeScript
+- **Framework:** Native Bun APIs
+
 ## Quick Start
 
 ```bash

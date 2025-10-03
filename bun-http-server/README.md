@@ -30,6 +30,12 @@ Deploys in under 60 seconds with automatic HTTPS, health checks, and zero config
 - **ES modules** - modern JavaScript
 - **Zero dependencies** - minimal attack surface
 
+## Technology Stack
+
+- **Runtime:** Bun
+- **Language:** TypeScript
+- **Framework:** Native Bun APIs
+
 ## Quick Start
 
 ```bash
