@@ -1,6 +1,6 @@
 # Bun React Vite
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/semanticentity/railway-bun-templates/tree/main/bun-react-vite)
 [![Tests](https://github.com/semanticentity/railway-bun-templates/workflows/Tests/badge.svg)](https://github.com/semanticentity/railway-bun-templates/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -32,7 +32,7 @@ bun run dev
 
 ## Deploy to Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/semanticentity/railway-bun-templates/tree/main/bun-react-vite)
 
 ## Use Cases
 
@@ -105,4 +105,4 @@ MIT - use freely in personal and commercial projects.
 
 ---
 
-**Built by semanticentity** | First Bun templates on Railway marketplace
+**Built by semanticentity**

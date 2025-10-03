@@ -27,7 +27,7 @@ Fast HTTP server for APIs and webhooks.
 - Hot reload in development
 - Production optimized
 
-**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/semanticentity/railway-bun-templates/tree/main/bun-http-server)
 
 **Use cases:** REST APIs, webhooks, microservices
 
@@ -45,7 +45,7 @@ Full-featured REST API with CRUD operations.
 - CORS enabled
 - Security headers
 
-**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/semanticentity/railway-bun-templates/tree/main/bun-rest-api)
 
 **Use cases:** Backend APIs, SaaS backends, mobile app backends
 
@@ -62,7 +62,7 @@ Bun API with PostgreSQL database integration.
 - CRUD API endpoints
 - Environment variable management
 
-**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/semanticentity/railway-bun-templates/tree/main/bun-postgresql)
 
 **Use cases:** User management, data-driven apps, CMS backends
 
@@ -79,7 +79,7 @@ Modern React frontend with Vite and Bun.
 - Responsive design
 - Production optimized
 
-**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/semanticentity/railway-bun-templates/tree/main/bun-react-vite)
 
 **Use cases:** SPAs, dashboards, admin panels, landing pages
 
@@ -96,7 +96,7 @@ Real-time WebSocket server.
 - Rate limiting
 - Test client included
 
-**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/semanticentity/railway-bun-templates/tree/main/bun-websocket)
 
 **Use cases:** Chat apps, real-time dashboards, live updates, collaborative tools
 
