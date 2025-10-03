@@ -1,18 +1,23 @@
 # Bun Templates for Railway
 
-Production-ready Bun templates for Railway deployment. First Bun templates on Railway marketplace.
+[![Tests](https://github.com/semanticentity/railway-bun-templates/workflows/Tests/badge.svg)](https://github.com/semanticentity/railway-bun-templates/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Bun](https://img.shields.io/badge/Bun-1.2+-black?logo=bun)](https://bun.sh)
+[![Railway](https://img.shields.io/badge/Railway-Deploy-purple?logo=railway)](https://railway.app)
+
+Production-ready Bun templates for Railway deployment. First comprehensive Bun template collection on Railway marketplace.
 
 ## Why Bun?
 
-- ⚡ **3-6x faster** than Node.js
-- 🔥 **3x faster** than Flask/Django  
-- ✅ Built-in TypeScript support
-- 🚀 Native ESM and CommonJS
-- 💪 Production-ready performance
+- **3-6x faster** than Node.js
+- **3x faster** than Flask/Django  
+- Built-in TypeScript support
+- Native ESM and CommonJS
+- Production-ready performance
 
 ## Templates
 
-### 🚀 Bun HTTP Server
+### Bun HTTP Server
 
 Fast HTTP server for APIs and webhooks.
 
@@ -22,13 +27,13 @@ Fast HTTP server for APIs and webhooks.
 - Hot reload in development
 - Production optimized
 
-**Deploy:** [Railway Deploy Button]
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
 
 **Use cases:** REST APIs, webhooks, microservices
 
 ---
 
-### 🔧 Bun REST API
+### Bun REST API
 
 Full-featured REST API with CRUD operations.
 
@@ -40,13 +45,13 @@ Full-featured REST API with CRUD operations.
 - CORS enabled
 - Security headers
 
-**Deploy:** [Railway Deploy Button]
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
 
 **Use cases:** Backend APIs, SaaS backends, mobile app backends
 
 ---
 
-### 🗄️ Bun PostgreSQL
+### Bun PostgreSQL
 
 Bun API with PostgreSQL database integration.
 
@@ -57,13 +62,13 @@ Bun API with PostgreSQL database integration.
 - CRUD API endpoints
 - Environment variable management
 
-**Deploy:** [Railway Deploy Button]
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
 
 **Use cases:** User management, data-driven apps, CMS backends
 
 ---
 
-### ⚛️ Bun React Vite
+### Bun React Vite
 
 Modern React frontend with Vite and Bun.
 
@@ -74,13 +79,13 @@ Modern React frontend with Vite and Bun.
 - Responsive design
 - Production optimized
 
-**Deploy:** [Railway Deploy Button]
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
 
 **Use cases:** SPAs, dashboards, admin panels, landing pages
 
 ---
 
-### 💬 Bun WebSocket
+### Bun WebSocket
 
 Real-time WebSocket server.
 
@@ -91,7 +96,7 @@ Real-time WebSocket server.
 - Rate limiting
 - Test client included
 
-**Deploy:** [Railway Deploy Button]
+**Deploy:** [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
 
 **Use cases:** Chat apps, real-time dashboards, live updates, collaborative tools
 
@@ -101,10 +106,10 @@ Real-time WebSocket server.
 
 | Runtime | Speed | TypeScript | Build Time |
 |---------|-------|------------|------------|
-| **Bun** | **3-6x** | ✅ Native | **Fast** |
-| Node.js | 1x | ❌ Requires setup | Slow |
-| Deno | 2x | ✅ Native | Medium |
-| Python | 0.3x | ❌ No | N/A |
+| **Bun** | **3-6x** | Native | **Fast** |
+| Node.js | 1x | Requires setup | Slow |
+| Deno | 2x | Native | Medium |
+| Python | 0.3x | No | N/A |
 
 ## Quick Start
 
@@ -116,7 +121,7 @@ Click any "Deploy" button above for one-click deployment.
 
 ```bash
 # Clone template
-git clone https://github.com/YOUR-USERNAME/railway-bun-templates.git
+git clone https://github.com/semanticentity/railway-bun-templates.git
 cd railway-bun-templates/bun-http-server
 
 # Install Bun
@@ -199,33 +204,40 @@ bun run start
 ## Documentation
 
 Each template includes:
-- ✅ Detailed README
-- ✅ Example code and comments
-- ✅ Health check endpoints
-- ✅ Error handling
-- ✅ Production best practices
-- ✅ Environment variable documentation
+- Detailed README
+- Example code and comments
+- Health check endpoints
+- Error handling
+- Production best practices
+- Environment variable documentation
+
+## Testing
+
+All templates are continuously tested via GitHub Actions:
+- Structure validation
+- Package.json validation
+- Railway.json validation
+- Health endpoint checks
+- Documentation validation
+
+See the [Tests badge](https://github.com/semanticentity/railway-bun-templates/actions) for current status.
 
 ## Support
 
-- **Issues:** [GitHub Issues]
-- **Discussions:** [GitHub Discussions]
+- **Issues:** [GitHub Issues](https://github.com/semanticentity/railway-bun-templates/issues)
 - **Railway Docs:** https://docs.railway.com
+- **Bun Docs:** https://bun.sh/docs
 
 ## Contributing
 
-Contributions welcome! Please read [CONTRIBUTING.md] for guidelines.
+Contributions welcome! Please open an issue or pull request.
 
 ## License
 
 MIT License - use freely in personal and commercial projects.
 
-## Keywords
-
-bun, railway, templates, typescript, api, rest, postgresql, websocket, react, vite, fast, performance, backend, frontend, deployment, production
-
 ---
 
-**⭐ Star this repo if you find it useful!**
+**First comprehensive Bun template collection on Railway marketplace**
 
-**First Bun templates on Railway marketplace** | Built with ⚡ by [Your Name]
+Built by [semanticentity](https://github.com/semanticentity)

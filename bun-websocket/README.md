@@ -1,15 +1,21 @@
 # Bun WebSocket
 
-Real-time WebSocket server built with Bun.
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+[![Tests](https://github.com/semanticentity/railway-bun-templates/workflows/Tests/badge.svg)](https://github.com/semanticentity/railway-bun-templates/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Real-time WebSocket server built with Bun.** High-performance WebSocket server delivering **3-6x better performance** than Node.js with built-in chat functionality, user management, and rate limiting.
+
+Perfect for chat applications, live dashboards, collaborative tools, and any real-time communication needs.
 
 ## Features
 
-- 💬 WebSocket support
-- 👥 User management
-- 🏠 Chat rooms
-- 🛡️ Rate limiting
-- 💓 Heartbeat/ping-pong
-- 🧪 Test client included
+- **WebSocket support** - Full WebSocket protocol implementation
+- **User management** - Track connected users and sessions
+- **Chat rooms** - Multi-room chat functionality
+- **Rate limiting** - Prevent spam and abuse
+- **Heartbeat/ping-pong** - Connection health monitoring
+- **Test client included** - Built-in web client for testing
 
 ## Quick Start
 
@@ -51,8 +57,66 @@ ws.onmessage = (event) => {
 
 ## Performance
 
-3-6x faster than Node.js WebSocket servers.
+- **3-6x faster** than Node.js WebSocket servers
+- **Low latency** real-time communication
+- **High throughput** message handling
+- **Efficient** connection management
+
+## Environment Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PORT` | `3000` | Server port (Railway sets this automatically) |
+
+## Local Development
+
+```bash
+# Install Bun
+curl -fsSL https://bun.sh/install | bash
+
+# Install dependencies
+bun install
+
+# Start development server
+bun run dev
+
+# Test the WebSocket connection
+# Open http://localhost:3000/test in your browser
+
+# Start production server
+bun run start
+```
+
+## WebSocket Events
+
+The server supports the following event types:
+
+```typescript
+// Join (automatic on connect)
+{ type: 'join', username: string }
+
+// Message
+{ type: 'message', content: string }
+
+// Heartbeat
+{ type: 'ping' }
+
+// Response
+{ type: 'pong' }
+```
+
+## Support & Community
+
+- [Railway Documentation](https://docs.railway.com)
+- [Bun Documentation](https://bun.sh/docs)
+- [WebSocket API Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+- [Report Issues](https://github.com/semanticentity/railway-bun-templates/issues)
+- Star this repo if you find it useful
 
 ## License
 
-MIT
+MIT - use freely in personal and commercial projects.
+
+---
+
+**Built by semanticentity** | First Bun templates on Railway marketplace

@@ -1,16 +1,22 @@
 # Bun REST API
 
-Complete REST API with CRUD operations built with Bun.
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR-CODE)
+[![Tests](https://github.com/semanticentity/railway-bun-templates/workflows/Tests/badge.svg)](https://github.com/semanticentity/railway-bun-templates/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Complete REST API with CRUD operations built with Bun.** Production-ready API server delivering **3-6x better performance** than Node.js with comprehensive features out of the box.
+
+Perfect for backend APIs, SaaS platforms, mobile app backends, and any application requiring a robust REST API.
 
 ## Features
 
-- ✅ Full CRUD operations
-- 📄 Pagination support
-- ✔️ Request validation
-- 🛡️ Rate limiting
-- 🌐 CORS enabled
-- 🔒 Security headers
-- ⚡ 3-6x faster than Node.js
+- **Full CRUD operations** - Complete create, read, update, delete functionality
+- **Pagination support** - Efficient data pagination for large datasets
+- **Request validation** - Input validation and sanitization
+- **Rate limiting** - Protect against abuse and DoS attacks
+- **CORS enabled** - Cross-origin resource sharing configured
+- **Security headers** - Production security best practices
+- **3-6x faster** than Node.js - Native Bun performance
 
 ## Quick Start
 
@@ -38,6 +44,42 @@ bun run dev
 - E-commerce APIs
 - Content management
 
+## Environment Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PORT` | `3000` | Server port (Railway sets this automatically) |
+
+## Local Development
+
+```bash
+# Install Bun
+curl -fsSL https://bun.sh/install | bash
+
+# Install dependencies
+bun install
+
+# Start development server with hot reload
+bun run dev
+
+# Build for production
+bun run build
+
+# Start production server
+bun run start
+```
+
+## Support & Community
+
+- [Railway Documentation](https://docs.railway.com)
+- [Bun Documentation](https://bun.sh/docs)
+- [Report Issues](https://github.com/semanticentity/railway-bun-templates/issues)
+- Star this repo if you find it useful
+
 ## License
 
-MIT
+MIT - use freely in personal and commercial projects.
+
+---
+
+**Built by semanticentity** | First Bun templates on Railway marketplace
