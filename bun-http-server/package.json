@@ -1,0 +1,28 @@
+{
+  "name": "bun-http-server",
+  "version": "1.0.0",
+  "description": "Basic Bun HTTP server template for Railway deployment",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir=dist --target=node",
+    "test": "bun test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "keywords": [
+    "bun",
+    "railway",
+    "http-server",
+    "typescript",
+    "template"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
