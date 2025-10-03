@@ -1,6 +1,7 @@
 {
   "name": "bun-http-server",
   "version": "1.0.0",
+  "type": "module",
   "description": "Basic Bun HTTP server template for Railway deployment",
   "main": "src/index.ts",
   "scripts": {

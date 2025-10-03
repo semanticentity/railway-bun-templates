@@ -1,6 +1,7 @@
 {
   "name": "bun-websocket",
   "version": "1.0.0",
+  "type": "module",
   "description": "Real-time WebSocket chat server built with Bun, optimized for Railway deployment",
   "main": "src/index.ts",
   "scripts": {
