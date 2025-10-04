@@ -43,3 +43,11 @@ temp/
 
 # Assets
 assets/
+
+# Development scripts (local only)
+# serve-docs.sh
+# gh-preflight.sh  
+# setup-act.sh
+# test-workflow.sh
+# .actrc
+# .secrets
