@@ -3,319 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Railway Bun Templates | semanticentity</title>
-    <meta name="description" content="Production-ready Bun templates for Railway. 3-6x faster than Node.js. Deploy in 60 seconds.">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bun Templates for Railway | Production-Ready & Fast</title>
+    <meta name="description" content="Deploy 3-6x faster backends with Bun on Railway. Production templates for HTTP, REST API, PostgreSQL, React, and WebSocket.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white">
-    
-    <!-- Hero Section -->
-    <div class="container mx-auto px-4 py-20 text-center">
-        <div class="mb-8">
-            <span class="text-6xl">⚡</span>
-        </div>
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Bun Templates for Railway
-        </h1>
-        <p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto">
-            Production-ready templates delivering <strong class="text-purple-400">3-6x better performance</strong> than Node.js
-        </p>
-        <p class="text-lg text-gray-400 mb-12">
-            First comprehensive Bun template collection on Railway • Deploy in 60 seconds • Zero configuration
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#templates" class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-lg font-bold text-lg transition">
-                View Templates
-            </a>
-            <a href="https://github.com/semanticentity/railway-bun-templates" 
-               class="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition">
-                GitHub →
-            </a>
-        </div>
-    </div>
-
-    <!-- Stats Bar -->
-    <div class="bg-black bg-opacity-50 py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-3xl font-bold text-purple-400 mb-2">3-6x</div>
-                    <div class="text-gray-400 text-sm">Faster than Node.js</div>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold text-purple-400 mb-2">5</div>
-                    <div class="text-gray-400 text-sm">Production Templates</div>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold text-purple-400 mb-2">60s</div>
-                    <div class="text-gray-400 text-sm">Deploy Time</div>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold text-purple-400 mb-2">$5</div>
-                    <div class="text-gray-400 text-sm">Starting Cost/Month</div>
-                </div>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-name">Bun Templates</span>
             </div>
-        </div>
-    </div>
+            <div class="nav-links">
+                <a href="#templates">Templates</a>
+                <a href="https://github.com/semanticentity/railway-bun-templates">GitHub</a>
+                <a href="#templates" class="btn-cta">Get Started</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Templates Section -->
-    <div id="templates" class="container mx-auto px-4 py-20">
-        <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">Choose Your Template</h2>
-        
-        <!-- Grid of Templates -->
-        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    <section class="hero">
+        <div class="floating-particles"></div>
+        <div class="container">
+            <div class="hero-badge">
+                <span>🎉 Free & Open Source Templates</span>
+            </div>
             
-            <!-- Bun HTTP Server -->
-            <div class="bg-gray-800 bg-opacity-50 backdrop-blur rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition">
-                <div class="text-4xl mb-4">🚀</div>
-                <h3 class="text-2xl font-bold mb-3">Bun HTTP Server</h3>
-                <p class="text-gray-300 mb-6">
-                    Lightning-fast HTTP server for APIs, webhooks, and microservices. Zero dependencies.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded text-sm">45k req/s</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Zero config</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">TypeScript</span>
-                </div>
-                <div class="flex gap-3">
-                    <a href="DEMO_URL_HTTP" target="_blank" 
-                       class="flex-1 bg-green-600 hover:bg-green-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        🎮 Live Demo
-                    </a>
-                    <a href="https://railway.app/template/YOUR-CODE-1" 
-                       class="flex-1 bg-purple-600 hover:bg-purple-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        Deploy →
-                    </a>
-                </div>
-                <div class="mt-4 text-sm text-gray-400">
-                    Est. $5/month • Beginner friendly
-                </div>
-            </div>
-
-            <!-- Bun REST API -->
-            <div class="bg-gray-800 bg-opacity-50 backdrop-blur rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition">
-                <div class="text-4xl mb-4">🔧</div>
-                <h3 class="text-2xl font-bold mb-3">Bun REST API</h3>
-                <p class="text-gray-300 mb-6">
-                    Full-featured REST API with CRUD operations, pagination, rate limiting, and security headers.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded text-sm">CRUD ready</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Rate limiting</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">CORS</span>
-                </div>
-                <div class="flex gap-3">
-                    <a href="DEMO_URL_REST" target="_blank" 
-                       class="flex-1 bg-green-600 hover:bg-green-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        🎮 Live Demo
-                    </a>
-                    <a href="https://railway.app/template/YOUR-CODE-2" 
-                       class="flex-1 bg-purple-600 hover:bg-purple-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        Deploy →
-                    </a>
-                </div>
-                <div class="mt-4 text-sm text-gray-400">
-                    Est. $5/month • Intermediate
-                </div>
-            </div>
-
-            <!-- Bun PostgreSQL -->
-            <div class="bg-gradient-to-br from-purple-900 to-pink-900 bg-opacity-50 backdrop-blur rounded-2xl p-8 border-2 border-purple-500">
-                <div class="inline-block bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold mb-4">
-                    ⭐ MOST POPULAR
-                </div>
-                <div class="text-4xl mb-4">🗄️</div>
-                <h3 class="text-2xl font-bold mb-3">Bun + PostgreSQL</h3>
-                <p class="text-gray-200 mb-6">
-                    Full-stack API with PostgreSQL database, migrations, connection pooling, and CRUD operations.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-purple-700 text-purple-100 px-3 py-1 rounded text-sm">PostgreSQL</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Auto migrations</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Pooling</span>
-                </div>
-                <div class="flex gap-3">
-                    <a href="DEMO_URL_POSTGRES" target="_blank" 
-                       class="flex-1 bg-green-600 hover:bg-green-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        🎮 Live Demo
-                    </a>
-                    <a href="https://railway.app/template/YOUR-CODE-3" 
-                       class="flex-1 bg-white text-gray-900 hover:bg-gray-100 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        Deploy →
-                    </a>
-                </div>
-                <div class="mt-4 text-sm text-gray-200">
-                    Est. $12/month • Intermediate
-                </div>
-            </div>
-
-            <!-- Bun React Vite -->
-            <div class="bg-gray-800 bg-opacity-50 backdrop-blur rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition">
-                <div class="text-4xl mb-4">⚛️</div>
-                <h3 class="text-2xl font-bold mb-3">Bun React Vite</h3>
-                <p class="text-gray-300 mb-6">
-                    Modern React frontend with Vite, optimized builds, and production server with health checks.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded text-sm">React 18</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Vite</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Fast builds</span>
-                </div>
-                <div class="flex gap-3">
-                    <a href="DEMO_URL_REACT" target="_blank" 
-                       class="flex-1 bg-green-600 hover:bg-green-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        🎮 Live Demo
-                    </a>
-                    <a href="https://railway.app/template/YOUR-CODE-4" 
-                       class="flex-1 bg-purple-600 hover:bg-purple-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        Deploy →
-                    </a>
-                </div>
-                <div class="mt-4 text-sm text-gray-400">
-                    Est. $5/month • Beginner friendly
-                </div>
-            </div>
-
-            <!-- Bun WebSocket -->
-            <div class="bg-gray-800 bg-opacity-50 backdrop-blur rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition md:col-span-2">
-                <div class="text-4xl mb-4">💬</div>
-                <h3 class="text-2xl font-bold mb-3">Bun WebSocket</h3>
-                <p class="text-gray-300 mb-6">
-                    Real-time WebSocket server for chat apps, live updates, and collaborative tools. Includes test client.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded text-sm">Real-time</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Rate limiting</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">User management</span>
-                    <span class="bg-gray-700 px-3 py-1 rounded text-sm">Test client</span>
-                </div>
-                <div class="flex gap-3 max-w-md">
-                    <a href="DEMO_URL_WEBSOCKET" target="_blank" 
-                       class="flex-1 bg-green-600 hover:bg-green-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        🎮 Live Demo
-                    </a>
-                    <a href="https://railway.app/template/YOUR-CODE-5" 
-                       class="flex-1 bg-purple-600 hover:bg-purple-700 text-center px-4 py-3 rounded-lg font-semibold transition">
-                        Deploy →
-                    </a>
-                </div>
-                <div class="mt-4 text-sm text-gray-400">
-                    Est. $5/month • Intermediate
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Performance Section -->
-    <div class="bg-black bg-opacity-50 py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-12 text-center">Performance That Matters</h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="text-center">
-                    <div class="text-6xl mb-4">🔥</div>
-                    <div class="text-4xl font-bold mb-2 text-purple-400">45,000</div>
-                    <div class="text-xl text-gray-300 mb-2">req/s</div>
-                    <div class="text-gray-400">Bun Server</div>
-                </div>
-                <div class="text-center opacity-60">
-                    <div class="text-6xl mb-4">🐢</div>
-                    <div class="text-4xl font-bold mb-2">15,000</div>
-                    <div class="text-xl text-gray-300 mb-2">req/s</div>
-                    <div class="text-gray-400">Node.js</div>
-                </div>
-                <div class="text-center opacity-40">
-                    <div class="text-6xl mb-4">🐌</div>
-                    <div class="text-4xl font-bold mb-2">12,000</div>
-                    <div class="text-xl text-gray-300 mb-2">req/s</div>
-                    <div class="text-gray-400">Python Flask</div>
-                </div>
-            </div>
-            <p class="text-center text-gray-400 mt-8 max-w-2xl mx-auto">
-                Real-world benchmarks show Bun delivers 3-6x better performance than traditional runtimes,
-                reducing costs and improving user experience.
+            <h1 class="hero-title">DEPLOY <span class="gradient-text">3-6X FASTER</span><br/>WITH BUN ON RAILWAY</h1>
+            
+            <p class="hero-subtitle">
+                Free, production-ready templates for HTTP servers, REST APIs, PostgreSQL, React, and WebSocket. 
+                <strong>MIT licensed. Zero configuration. Deploy in 60 seconds.</strong>
             </p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number counter" data-target="45000">0</div>
+                    <div class="stat-label">req/s</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3-6x</div>
+                    <div class="stat-label">Faster</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number counter" data-target="5">0</div>
+                    <div class="stat-label">Templates</div>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#templates" class="btn-primary pulse">Browse Templates</a>
+                <a href="https://railway.com?referralCode=semanticentity" target="_blank" class="btn-secondary">Try Railway Free</a>
+            </div>
+
+            <div class="preview-window">
+                <div class="window-header">
+                    <div class="window-dots"><span></span><span></span><span></span></div>
+                    <div class="window-title">Deploy to Railway</div>
+                </div>
+                <div class="terminal">
+                    <div class="terminal-line"><span class="prompt">$</span> railway up</div>
+                    <div class="terminal-line fade-in" style="animation-delay: 0.5s">
+                        <span class="text-purple">✓</span> Detected Bun project
+                    </div>
+                    <div class="terminal-line fade-in" style="animation-delay: 1s">
+                        <span class="text-purple">✓</span> Building with RAILPACK...
+                    </div>
+                    <div class="terminal-line fade-in" style="animation-delay: 1.5s">
+                        <span class="text-green">✓</span> Deployed successfully
+                    </div>
+                    <div class="terminal-line fade-in" style="animation-delay: 2s">
+                        <span class="text-blue">→</span> https://your-app.up.railway.app
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="templates" class="templates">
+        <div class="container">
+            <h2>Choose Your Template</h2>
+            <p class="section-subtitle">Click deploy to launch on Railway, or view source on GitHub</p>
+            
+            <div class="template-selector">
+                <button class="selector-btn active" data-template="http">HTTP Server</button>
+                <button class="selector-btn" data-template="rest">REST API</button>
+                <button class="selector-btn" data-template="postgres">PostgreSQL</button>
+                <button class="selector-btn" data-template="react">React + Vite</button>
+                <button class="selector-btn" data-template="websocket">WebSocket</button>
+            </div>
+
+            <div class="template-showcase" id="template-content"></div>
+            
+            <div class="templates-grid">
+                <div class="template-card">
+                    <h3>HTTP Server</h3>
+                    <p>Lightning-fast HTTP server for APIs and webhooks</p>
+                    <div class="tags">
+                        <span>45k req/s</span>
+                        <span>TypeScript</span>
+                        <span>Zero deps</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-deploy" onclick="openDeployModal('HTTP Server', 'bun-http-server')">Deploy</button>
+                        <a href="https://github.com/semanticentity/railway-bun-templates/tree/main/bun-http-server" class="btn-code">Code</a>
+                    </div>
+                    <div class="card-footer">Free template • Beginner friendly</div>
+                </div>
+
+                <div class="template-card">
+                    <h3>REST API</h3>
+                    <p>Full CRUD with pagination and rate limiting</p>
+                    <div class="tags">
+                        <span>CRUD</span>
+                        <span>Rate limiting</span>
+                        <span>CORS</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-deploy" onclick="openDeployModal('REST API', 'bun-rest-api')">Deploy</button>
+                        <a href="https://github.com/semanticentity/railway-bun-templates/tree/main/bun-rest-api" class="btn-code">Code</a>
+                    </div>
+                    <div class="card-footer">Free template • Intermediate</div>
+                </div>
+
+                <div class="template-card featured">
+                    <div class="featured-badge">POPULAR</div>
+                    <h3>PostgreSQL</h3>
+                    <p>Full-stack API with database and migrations</p>
+                    <div class="tags">
+                        <span>PostgreSQL</span>
+                        <span>Migrations</span>
+                        <span>Pooling</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-deploy primary" onclick="openDeployModal('PostgreSQL', 'bun-postgresql')">Deploy</button>
+                        <a href="https://github.com/semanticentity/railway-bun-templates/tree/main/bun-postgresql" class="btn-code">Code</a>
+                    </div>
+                    <div class="card-footer">Free template • Intermediate</div>
+                </div>
+
+                <div class="template-card">
+                    <h3>React + Vite</h3>
+                    <p>Modern React frontend with instant HMR</p>
+                    <div class="tags">
+                        <span>React 18</span>
+                        <span>Vite</span>
+                        <span>Fast builds</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-deploy" onclick="openDeployModal('React + Vite', 'bun-react-vite')">Deploy</button>
+                        <a href="https://github.com/semanticentity/railway-bun-templates/tree/main/bun-react-vite" class="btn-code">Code</a>
+                    </div>
+                    <div class="card-footer">Free template • Beginner friendly</div>
+                </div>
+
+                <div class="template-card">
+                    <h3>WebSocket</h3>
+                    <p>Real-time server for chat and live updates</p>
+                    <div class="tags">
+                        <span>Real-time</span>
+                        <span>Rate limiting</span>
+                        <span>Test client</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-deploy" onclick="openDeployModal('WebSocket', 'bun-websocket')">Deploy</button>
+                        <a href="https://github.com/semanticentity/railway-bun-templates/tree/main/bun-websocket" class="btn-code">Code</a>
+                    </div>
+                    <div class="card-footer">Free template • Intermediate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Everything You Need</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Zero Configuration</h3>
+                    <p>Railway auto-detects Bun. Just push and deploy.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Health Checks</h3>
+                    <p>Built-in endpoints for Railway monitoring.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📝</div>
+                    <h3>TypeScript Native</h3>
+                    <p>Full TypeScript without transpilation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Modal -->
+    <div id="deployModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 id="modalTitle">Deploy to Railway</h2>
+            <div class="deploy-steps">
+                <div class="deploy-step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Clone the template</h4>
+                        <div class="code-block">
+                            <code id="cloneCommand">git clone https://github.com/semanticentity/railway-bun-templates.git
+cd railway-bun-templates/<span id="templatePath">bun-http-server</span></code>
+                            <button class="copy-btn" onclick="copyCode('cloneCommand')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="deploy-step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Install dependencies</h4>
+                        <div class="code-block">
+                            <code>bun install</code>
+                            <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="deploy-step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Test locally</h4>
+                        <div class="code-block">
+                            <code>bun run dev</code>
+                            <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+                        </div>
+                        <p class="step-note">Visit <span class="highlight">localhost:3000</span> to test</p>
+                    </div>
+                </div>
+                
+                <div class="deploy-step">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h4>Deploy to Railway</h4>
+                        <div class="code-block">
+                            <code>railway login
+railway init
+railway up</code>
+                            <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+                        </div>
+                        <p class="step-note">Don't have Railway? <a href="https://railway.com?referralCode=semanticentity" target="_blank">Sign up for free</a> • <a href="https://docs.railway.app/develop/cli" target="_blank">Install CLI</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <p>✅ Done! Your app is live on Railway</p>
+                <a href="https://railway.com?referralCode=semanticentity" target="_blank" class="btn-primary">Try Railway Free</a>
+                <a href="https://github.com/semanticentity/railway-bun-templates" target="_blank" class="btn-secondary" style="margin-top: 12px;">View Full Docs</a>
+            </div>
         </div>
     </div>
 
-    <!-- Features Section -->
-    <div class="container mx-auto px-4 py-20">
-        <h2 class="text-4xl font-bold mb-12 text-center">Everything You Need</h2>
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div class="text-center">
-                <div class="text-4xl mb-4">⚡</div>
-                <h3 class="text-xl font-bold mb-3">Zero Configuration</h3>
-                <p class="text-gray-400">
-                    Railway auto-detects Bun. Just push and deploy. HTTPS, domains, and scaling handled automatically.
-                </p>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl mb-4">🏥</div>
-                <h3 class="text-xl font-bold mb-3">Health Checks</h3>
-                <p class="text-gray-400">
-                    Built-in health endpoints for Railway monitoring. Database connectivity checks included.
-                </p>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl mb-4">📝</div>
-                <h3 class="text-xl font-bold mb-3">TypeScript Native</h3>
-                <p class="text-gray-400">
-                    Full TypeScript support without transpilation. Type-safe from development to production.
-                </p>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl mb-4">🔄</div>
-                <h3 class="text-xl font-bold mb-3">Auto Migrations</h3>
-                <p class="text-gray-400">
-                    Database schemas managed with version-controlled migrations. Deploy and forget.
-                </p>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl mb-4">🛡️</div>
-                <h3 class="text-xl font-bold mb-3">Production Ready</h3>
-                <p class="text-gray-400">
-                    Error handling, rate limiting, CORS, security headers. Battle-tested patterns included.
-                </p>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl mb-4">💰</div>
-                <h3 class="text-xl font-bold mb-3">Cost Effective</h3>
-                <p class="text-gray-400">
-                    Start at $5/month. Better performance means fewer resources and lower costs.
-                </p>
-            </div>
+    <footer class="footer">
+        <div class="container">
+            <p>100% Free & Open Source • Built by <a href="https://github.com/semanticentity">semanticentity</a> • MIT License</p>
+            <p style="margin-top: 8px; font-size: 14px;">Templates are free forever. Deploy on <a href="https://railway.com?referralCode=semanticentity" target="_blank">Railway</a> from $5/month.</p>
+            <p style="margin-top: 12px; font-size: 11px; opacity: 0.5;">Railway links include referral codes. We may earn a commission at no cost to you.</p>
         </div>
-    </div>
+    </footer>
 
-    <!-- CTA Section -->
-    <div class="bg-gradient-to-r from-purple-900 to-pink-900 py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-6">Ready to Deploy?</h2>
-            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                Choose a template above and deploy to Railway in 60 seconds. 
-                First comprehensive Bun template collection on Railway.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#templates" class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition">
-                    View Templates
-                </a>
-                <a href="https://github.com/semanticentity/railway-bun-templates" 
-                   class="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition">
-                    View on GitHub →
-                </a>
-            </div>
-        </div>
-    </div>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #0a0b0e; color: #fff; line-height: 1.6; overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-    <!-- Footer -->
-    <div class="container mx-auto px-4 py-12 text-center text-gray-400">
-        <p class="mb-4">
-            Built with ⚡ by <a href="https://github.com/semanticentity" class="text-purple-400 hover:text-purple-300">semanticentity</a>
-        </p>
-        <p class="text-sm">
-            First Bun templates on Railway marketplace • MIT License • Open Source
-        </p>
-    </div>
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.fade-in { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+.pulse { animation: pulse 2s infinite; }
+.gradient-text { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
+.header { border-bottom: 1px solid #1a1d23; background: rgba(10, 11, 14, 0.95); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; max-width: 1200px; margin: 0 auto; }
+.brand-name { font-weight: 700; font-size: 18px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { color: #9ca3af; text-decoration: none; font-weight: 500; transition: all 0.3s; }
+.nav-links a:hover { color: #fff; }
+.btn-cta { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: #fff !important; padding: 8px 16px; border-radius: 6px; }
+
+.hero { padding: 140px 0 100px; text-align: center; position: relative; overflow: hidden; }
+.floating-particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%); animation: float 6s ease-in-out infinite; }
+.hero-badge { display: inline-block; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); padding: 8px 16px; border-radius: 50px; margin-bottom: 32px; font-size: 14px; font-weight: 500; }
+.hero-title { font-size: clamp(40px, 8vw, 72px); font-weight: 800; line-height: 1.1; margin-bottom: 24px; }
+.hero-subtitle { font-size: 20px; color: #9ca3af; max-width: 700px; margin: 0 auto 40px; }
+.hero-stats { display: flex; justify-content: center; gap: 48px; margin-bottom: 40px; }
+.stat { text-align: center; }
+.stat-number { font-size: 48px; font-weight: 800; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.stat-label { color: #6b7280; font-size: 14px; }
+.hero-buttons { display: flex; gap: 16px; justify-content: center; margin-bottom: 80px; }
+.btn-primary, .btn-secondary { padding: 16px 32px; border-radius: 12px; font-weight: 600; font-size: 16px; text-decoration: none; transition: all 0.3s; display: inline-block; }
+.btn-primary { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: #fff; }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(99, 102, 241, 0.4); }
+.btn-secondary { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #fff; }
+.btn-secondary:hover { border-color: #6366f1; background: rgba(99, 102, 241, 0.1); }
+
+.preview-window { max-width: 800px; margin: 0 auto; background: rgba(26, 29, 35, 0.8); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); }
+.window-header { background: rgba(15, 17, 20, 0.9); padding: 16px 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; gap: 12px; }
+.window-dots { display: flex; gap: 8px; }
+.window-dots span { width: 12px; height: 12px; border-radius: 50%; }
+.window-dots span:nth-child(1) { background: #ef4444; }
+.window-dots span:nth-child(2) { background: #f59e0b; }
+.window-dots span:nth-child(3) { background: #10b981; }
+.window-title { font-size: 14px; color: #9ca3af; }
+.terminal { padding: 24px; font-family: 'Monaco', monospace; font-size: 14px; }
+.terminal-line { margin-bottom: 8px; opacity: 0; }
+.prompt { color: #10b981; margin-right: 8px; }
+.text-purple { color: #8b5cf6; }
+.text-green { color: #10b981; }
+.text-blue { color: #3b82f6; }
+
+.templates { padding: 100px 0; }
+.templates h2 { font-size: clamp(36px, 6vw, 56px); font-weight: 700; text-align: center; margin-bottom: 16px; }
+.section-subtitle { text-align: center; color: #9ca3af; font-size: 18px; margin-bottom: 60px; }
+.template-selector { display: flex; justify-content: center; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
+.selector-btn { background: rgba(26, 29, 35, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); color: #9ca3af; padding: 12px 24px; border-radius: 8px; cursor: pointer; transition: all 0.3s; font-size: 14px; font-weight: 500; }
+.selector-btn:hover, .selector-btn.active { border-color: #6366f1; color: #fff; background: rgba(99, 102, 241, 0.1); }
+.template-showcase { min-height: 200px; margin-bottom: 60px; }
+.templates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.template-card { background: rgba(26, 29, 35, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 32px; transition: all 0.3s; position: relative; }
+.template-card:hover { transform: translateY(-8px); border-color: rgba(99, 102, 241, 0.5); box-shadow: 0 15px 40px rgba(99, 102, 241, 0.15); }
+.template-card.featured { border: 2px solid #6366f1; }
+.featured-badge { position: absolute; top: -12px; right: 20px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: #fff; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.template-card h3 { font-size: 24px; margin-bottom: 12px; }
+.template-card p { color: #9ca3af; margin-bottom: 16px; }
+.tags { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.tags span { background: rgba(99, 102, 241, 0.1); color: #a78bfa; padding: 4px 12px; border-radius: 6px; font-size: 12px; }
+.card-actions { display: flex; gap: 12px; margin-bottom: 16px; }
+.btn-deploy, .btn-code { flex: 1; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s; border: none; cursor: pointer; }
+.btn-deploy { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: #fff; }
+.btn-deploy:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3); }
+.btn-deploy.primary { background: linear-gradient(135deg, #fff 0%, #f3f4f6 100%); color: #0a0b0e; }
+.btn-code { border: 1px solid rgba(255, 255, 255, 0.1); color: #fff; background: transparent; }
+.btn-code:hover { border-color: #6366f1; }
+.card-footer { color: #6b7280; font-size: 12px; }
+
+.modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(10px); }
+.modal.active { display: flex; align-items: center; justify-content: center; animation: fadeInUp 0.3s ease-out; }
+.modal-content { background: #1a1d23; border-radius: 20px; padding: 40px; max-width: 700px; width: 90%; max-height: 90vh; overflow-y: auto; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; }
+.modal-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: #9ca3af; font-size: 32px; cursor: pointer; line-height: 1; transition: all 0.3s; }
+.modal-close:hover { color: #fff; transform: rotate(90deg); }
+#modalTitle { font-size: 32px; margin-bottom: 32px; text-align: center; }
+.deploy-steps { display: flex; flex-direction: column; gap: 24px; }
+.deploy-step { display: flex; gap: 20px; }
+.step-num { width: 40px; height: 40px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; flex-shrink: 0; }
+.step-content { flex: 1; }
+.step-content h4 { font-size: 18px; margin-bottom: 12px; }
+.code-block { background: #0a0b0e; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 16px; position: relative; margin-bottom: 8px; }
+.code-block code { font-family: 'Monaco', monospace; font-size: 14px; color: #10b981; display: block; white-space: pre; overflow-x: auto; }
+.copy-btn { position: absolute; top: 12px; right: 12px; background: rgba(99, 102, 241, 0.2); border: 1px solid rgba(99, 102, 241, 0.3); color: #a78bfa; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.3s; }
+.copy-btn:hover { background: rgba(99, 102, 241, 0.3); }
+.step-note { color: #9ca3af; font-size: 14px; margin-top: 8px; }
+.step-note a { color: #8b5cf6; text-decoration: none; }
+.step-note a:hover { text-decoration: underline; }
+.highlight { color: #8b5cf6; font-weight: 600; }
+.modal-footer { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+.modal-footer p { color: #10b981; font-weight: 600; margin-bottom: 16px; font-size: 18px; }
+.modal-footer .btn-primary { display: inline-block; }
+
+.features { padding: 100px 0; background: rgba(26, 29, 35, 0.3); }
+.features h2 { font-size: 42px; font-weight: 700; text-align: center; margin-bottom: 60px; }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+.feature { text-align: center; }
+.feature-icon { font-size: 48px; margin-bottom: 16px; }
+.feature h3 { font-size: 20px; margin-bottom: 12px; }
+.feature p { color: #9ca3af; }
+
+.footer { padding: 40px 0; border-top: 1px solid #1a1d23; text-align: center; color: #6b7280; }
+.footer a { color: #8b5cf6; text-decoration: none; }
+.footer a:hover { color: #a78bfa; }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-stats { flex-direction: column; gap: 24px; }
+    .hero-buttons { flex-direction: column; }
+    .btn-primary, .btn-secondary { width: 100%; }
+    .templates-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<script>
+// Modal Functions
+window.openDeployModal = function(title, templatePath) {
+    document.getElementById('modalTitle').textContent = `Deploy ${title}`;
+    document.getElementById('templatePath').textContent = templatePath;
+    document.getElementById('deployModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+};
+
+window.copyCode = function(element) {
+    const code = typeof element === 'string' ? document.getElementById(element).textContent : element.textContent;
+    navigator.clipboard.writeText(code.trim()).then(() => {
+        const btn = event.target;
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.style.background = 'rgba(16, 185, 129, 0.2)';
+        btn.style.borderColor = 'rgba(16, 185, 129, 0.3)';
+        btn.style.color = '#10b981';
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.style.color = '';
+        }, 2000);
+    });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Modal close handlers
+    const modalClose = document.querySelector('.modal-close');
+    if (modalClose) {
+        modalClose.addEventListener('click', () => {
+            document.getElementById('deployModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    }
+    
+    const deployModal = document.getElementById('deployModal');
+    if (deployModal) {
+        deployModal.addEventListener('click', (e) => {
+            if (e.target.id === 'deployModal') {
+                deployModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+    
+    function animateCounter(element) {
+        const target = parseInt(element.getAttribute('data-target'));
+        const duration = 2000;
+        let start = null;
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            const current = Math.min(Math.floor(progress / duration * target), target);
+            element.textContent = current.toLocaleString();
+            if (current < target) window.requestAnimationFrame(step);
+        }
+        window.requestAnimationFrame(step);
+    }
+    
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.target.classList.contains('counter')) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    document.querySelectorAll('.counter').forEach(el => observer.observe(el));
+    
+    const terminalLines = document.querySelectorAll('.terminal-line');
+    terminalLines.forEach((line, i) => {
+        setTimeout(() => line.classList.add('fade-in'), i * 500);
+    });
+    
+    const templateData = {
+        http: { title: 'HTTP Server', desc: 'Lightning-fast HTTP server built with native Bun APIs. Perfect for REST APIs, webhooks, and microservices.', features: ['45,000 req/s', 'Zero dependencies', 'TypeScript native', 'Hot reload', 'Health checks'] },
+        rest: { title: 'REST API', desc: 'Full-featured REST API with CRUD operations, pagination, rate limiting, and CORS. Production-ready out of the box.', features: ['CRUD operations', 'Pagination support', 'Rate limiting', 'CORS enabled', 'Security headers'] },
+        postgres: { title: 'PostgreSQL', desc: 'Complete full-stack API with PostgreSQL database, auto migrations, and connection pooling. Everything you need for data-driven apps.', features: ['PostgreSQL included', 'Auto migrations', 'Connection pooling', 'CRUD examples', 'Type-safe queries'] },
+        react: { title: 'React + Vite', desc: 'Modern React application with Vite for instant HMR. Optimized production builds with Bun serving static files blazingly fast.', features: ['React 18', 'Vite HMR', '10x faster installs', 'TypeScript', 'Production server'] },
+        websocket: { title: 'WebSocket', desc: 'Real-time WebSocket server for chat, live updates, and collaborative tools. Includes test client and rate limiting.', features: ['Real-time messaging', 'User management', 'Rate limiting', 'Test client', 'Connection health'] }
+    };
+    
+    const selectorBtns = document.querySelectorAll('.selector-btn');
+    const templateContent = document.getElementById('template-content');
+    
+    function updateTemplate(key) {
+        const data = templateData[key];
+        const features = data.features.map(f => `<li>${f}</li>`).join('');
+        templateContent.style.opacity = '0';
+        setTimeout(() => {
+            templateContent.innerHTML = `
+                <div style="background: rgba(26, 29, 35, 0.8); padding: 40px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    <h3 style="font-size: 32px; margin-bottom: 16px;">${data.title}</h3>
+                    <p style="color: #9ca3af; font-size: 18px; margin-bottom: 24px;">${data.desc}</p>
+                    <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                        ${features}
+                    </ul>
+                </div>
+            `;
+            templateContent.style.transition = 'opacity 0.3s';
+            templateContent.style.opacity = '1';
+        }, 200);
+    }
+    
+    if (selectorBtns.length) {
+        updateTemplate('http');
+        selectorBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                selectorBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                updateTemplate(btn.getAttribute('data-template'));
+            });
+        });
+    }
+});
+</script>
 </body>
 </html>
