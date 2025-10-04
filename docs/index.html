@@ -61,17 +61,20 @@
                     <div class="window-title">Deploy to Railway</div>
                 </div>
                 <div class="terminal">
-                    <div class="terminal-line"><span class="prompt">$</span> railway up</div>
+                    <div class="terminal-line"><span class="prompt">$</span> git clone https://github.com/semanticentity/railway-bun-templates.git</div>
                     <div class="terminal-line fade-in" style="animation-delay: 0.5s">
-                        <span class="text-purple">✓</span> Detected Bun project
+                        <span class="prompt">$</span> cd railway-bun-templates/bun-http-server
                     </div>
                     <div class="terminal-line fade-in" style="animation-delay: 1s">
-                        <span class="text-purple">✓</span> Building with RAILPACK...
+                        <span class="prompt">$</span> railway up
                     </div>
                     <div class="terminal-line fade-in" style="animation-delay: 1.5s">
-                        <span class="text-green">✓</span> Deployed successfully
+                        <span class="text-purple">✓</span> Detected Bun project
                     </div>
                     <div class="terminal-line fade-in" style="animation-delay: 2s">
+                        <span class="text-green">✓</span> Deployed successfully
+                    </div>
+                    <div class="terminal-line fade-in" style="animation-delay: 2.5s">
                         <span class="text-blue">→</span> https://your-app.up.railway.app
                     </div>
                 </div>
@@ -128,7 +131,7 @@
                 <div class="template-card featured">
                     <div class="featured-badge">POPULAR</div>
                     <h3>PostgreSQL</h3>
-                    <p>Full-stack API with database and migrations</p>
+                    <p>Bun API with PostgreSQL database and migrations</p>
                     <div class="tags">
                         <span>PostgreSQL</span>
                         <span>Migrations</span>
@@ -471,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const templateData = {
         http: { title: 'HTTP Server', desc: 'Lightning-fast HTTP server built with native Bun APIs. Perfect for REST APIs, webhooks, and microservices.', features: ['45,000 req/s', 'Zero dependencies', 'TypeScript native', 'Hot reload', 'Health checks'] },
         rest: { title: 'REST API', desc: 'Full-featured REST API with CRUD operations, pagination, rate limiting, and CORS. Production-ready out of the box.', features: ['CRUD operations', 'Pagination support', 'Rate limiting', 'CORS enabled', 'Security headers'] },
-        postgres: { title: 'PostgreSQL', desc: 'Complete full-stack API with PostgreSQL database, auto migrations, and connection pooling. Everything you need for data-driven apps.', features: ['PostgreSQL included', 'Auto migrations', 'Connection pooling', 'CRUD examples', 'Type-safe queries'] },
+        postgres: { title: 'PostgreSQL', desc: 'Complete Bun API with PostgreSQL database, auto migrations, and connection pooling. Everything you need for data-driven apps.', features: ['PostgreSQL included', 'Auto migrations', 'Connection pooling', 'CRUD examples', 'Type-safe queries'] },
         react: { title: 'React + Vite', desc: 'Modern React application with Vite for instant HMR. Optimized production builds with Bun serving static files blazingly fast.', features: ['React 18', 'Vite HMR', '10x faster installs', 'TypeScript', 'Production server'] },
         websocket: { title: 'WebSocket', desc: 'Real-time WebSocket server for chat, live updates, and collaborative tools. Includes test client and rate limiting.', features: ['Real-time messaging', 'User management', 'Rate limiting', 'Test client', 'Connection health'] }
     };
